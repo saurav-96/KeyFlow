@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect x="4" y="8" width="56" height="52" rx="14" fill="#312E81"/>
+  <rect x="4" y="4" width="56" height="50" rx="14" fill="url(#keyflow_grad)" stroke="#818CF8" stroke-width="1.5"/>
+  <path d="M22 19V39M22 29L32 19M26.5 24.5L34 39" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="38" y="34" width="8" height="4" rx="2" fill="#C7D2FE"/>
+  <defs>
+    <linearGradient id="keyflow_grad" x1="4" y1="4" x2="60" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+</svg>

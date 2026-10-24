@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Custom subtle scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300/80 dark:bg-slate-700/80 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400 dark:bg-slate-600;
+  }
+}
+
+@layer components {
+  /* Tactile 3D Mechanical / Laptop Keycap */
+  .keycap {
+    @apply inline-flex items-center justify-center font-mono font-semibold text-[11.5px] tracking-tight leading-none select-none transition-all duration-100;
+    @apply min-w-[1.8rem] h-7 px-2 rounded-[6px];
+    @apply bg-gradient-to-b from-white via-slate-50/95 to-slate-100 text-slate-800;
+    @apply border border-slate-300/95 border-b-[3px] border-b-slate-300;
+    box-shadow:
+      0 1.5px 2px rgba(15, 23, 42, 0.08),
+      0 0 0 0.5px rgba(15, 23, 42, 0.03),
+      inset 0 1px 0 rgba(255, 255, 255, 1);
+  }
+
+  .keycap-modifier {
+    @apply text-slate-700 dark:text-slate-200 bg-gradient-to-b from-slate-50 via-slate-100/90 to-slate-200/70;
+  }
+
+  .dark .keycap {
+    @apply bg-gradient-to-b from-slate-800 via-slate-800/95 to-slate-900 text-slate-100;
+    @apply border-slate-700/90 border-b-[3px] border-b-slate-950;
+    box-shadow:
+      0 2px 3px rgba(0, 0, 0, 0.55),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .dark .keycap-modifier {
+    @apply bg-gradient-to-b from-slate-800/90 via-slate-900 to-slate-950 text-indigo-200/95;
+  }
+
+  .keycap-sm {
+    @apply min-w-[1.5rem] h-6 px-1.5 text-[11px] rounded-[5px] border-b-[2.5px];
+  }
+
+  .keycap-lg {
+    @apply min-w-[2.25rem] h-9 px-3 text-sm rounded-lg border-b-[3.5px];
+  }
+
+  .keycap-active {
+    @apply from-indigo-50 via-indigo-50 to-indigo-100 text-indigo-700 border-indigo-300 border-b-indigo-400;
+  }
+
+  .dark .keycap-active {
+    @apply from-indigo-950/90 via-indigo-900/60 to-indigo-950 text-indigo-200 border-indigo-700/80 border-b-indigo-950;
+  }
+
+  /* Subtle technical dot grid background for hero headers */
+  .bg-dot-grid {
+    background-image: radial-gradient(rgba(99, 102, 241, 0.13) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+  .dark .bg-dot-grid {
+    background-image: radial-gradient(rgba(129, 140, 248, 0.12) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+}
