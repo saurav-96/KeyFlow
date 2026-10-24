@@ -1,5 +1,7 @@
 # KeyFlow — Personal Keyboard Shortcut Manager
 
+![KeyFlow Portfolio Banner](./docs/screenshots/upwork_thumbnail_1000x750.png)
+
 [![Live Demo](https://img.shields.io/badge/Live_Demo-KeyFlow-4F46E5?style=for-the-badge&logo=github)](https://saurav-96.github.io/KeyFlow/)
 [![React 19](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
